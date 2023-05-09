@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Author" content="Dagunton, Marian Denise E.">
+    <meta name="Description" content="CSS List Properties Program">
+    <title>Carb Overload</title>
+    <link href="https://fonts.cdnfonts.com/css/visby" rel="stylesheet">
+	
+    <link rel="icon" type="image/x-icon" href="DAGUNTON_IMAGES_ITAD/CO_SITE.png">
+	
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="DAGUNTON_IMAGES_ITAD/orderForm.css">
+    <!--DAGUNTON, MARIAN DENISE E.-->
+    <!--MAY 08, 2023-->
+	
+	<div class="header">
+	<p id="top">
+		
+		<img alt="Carb Overload logo" src="DAGUNTON_IMAGES_ITAD/CO_LOGO.png" class="pageLogo"></p>
+		<h1 class="tagline">"Satisfy Your Cravings, Ignore Your Jeans"</h1>
+		
+		<hr>
+		<div class="btn-holder"><!--ORDER NOW BUTTON-->
+			<a href="#custInfo">
+				<button class="button go-top">ORDER NOW</button>
+			</a>
+		</div>
+	</div>
+	
+	<div id="forms">
+		<!--CUSTOMER INFORMATION-->
+        <section class="section-container">
+          <form action="" method="post">
+			
+			<div class="feedback-icon"  id="custInfo">
+					<img src="DAGUNTON_IMAGES_ITAD/customerIcon.png" alt="Picture of a girl showing her opinion." class="undraw">
+				</div><br>
+			<legend>CUSTOMER INFORMATION</legend>
+			<hr class="divider"/>
+			<div class="legend-label">
+				<label for="custInfo">Please fill up all the required fields in the order form<br> to ensure a seamless customer experience.</label>
+			</div>
+            <fieldset>
+                <label for="fullName">Full Name: </label>
+                <input type="text" name="fullName" id="fullName" placeholder="e.g. Taylor Swift" required>
+              
+                <label for="address">Complete Address: </label>
+                <input type="text" name="address" id="address" placeholder="e.g. Cornelia Street" required>
+				
+				<div class="float-child-element">
+                <label for="contactNumber">Contact Number: </label>
+                <input type="phone" id="contactNumber" placeholder="e.g. 09XX-XXX-XXXX" required>
+				</div>
+				
+				<div class="float-child-element">
+                <label for="email">Email address: </label>
+                <input type="email" name="email" id="toEmail" placeholder="e.g. Mr.PerfectlyFine@gmail.com">
+				</div>
+
+                <label for="description">Description on how to get to the place: </label required><br>
+                <textarea name="description" id="custDescription" placeholder="e.g. Meet me behind the mall.."cols="77" rows="10"></textarea>
+            </fieldset>  
+			
+			<h2 class="text-menu">What are you craving today?</h2>
+			
+			<!--DROPDOWN MENU-->
+			<div class="dropdown-holder">
+				<div class="dropdown"><!--MENU-->
+				<button class="dropbtn">MENU</button>
+					<div class="dropdown-content">
+						<a href="#burger"><b>Burger</b></a>
+						<a href="#pasta"><b>Pasta</b></a>
+						<a href="#fries"><b>Fries</b></a>
+						<a href="#drinks"><b>Drinks</b></a>
+					</div>
+				</div>
+			</div>
+        </section>
+		
+		<!--BURGER-->
+        <section class="section-container">
+            <fieldset>
+              <legend id="burger">BURGER</legend>
+			  <hr class="divider"/>
+			  
+			  <div class="legend-label">
+				<label for="burger"><b>Build your burger, your way!</b><br> Customize every bite with our buns, patties, and add-ons.</label><br>
+			 </div>
+			
+			  <img src="DAGUNTON_IMAGES_ITAD/burger.png" alt="Picture of our special burger." class="food">
+			  
+              <div class="checks">         
+						<!--BUNS-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/bunIcon.png" alt="icon of a bun." class="orderIcon">
+						</div>
+						<div class="title-choices">
+							<p class="choose">Choose your bun: </p>
+						</div><br>
+						
+						<div class="block-choices">
+							<input type="radio" name="bun" id="white">
+							<label for="white">White Bun</label>
+							<br>
+							<input type="radio" name="bun" id="wheat">
+							<label for="wheat">Wheat Bun</label>
+						</div>
+						
+						<div class="block-choices">
+							<input type="radio" name="bun" id="honey">
+							<label for="honey">Honey Oat</label>
+							<br>
+							<input type="radio" name="bun" id="sugar">
+							<label for="sugar">Sugar Free</label>
+						</div>
+						<br>
+						
+						<!--PATTY-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/pattyIcon.png" alt="icon of a a patty." class="orderIcon">
+						</div>
+						<div class="title-choices">
+							<p class="choose">Choose your patty:</p>
+						</div><br>
+						
+						<div class="block-choices">
+							<input type="radio" name="patty" id="singlePatty">
+							<label for="singlePatty">Single Patty</label>
+							<input type="radio" name="patty" id="doublePatty">
+							<label for="doublePatty">Double Patty</label>
+						</div>
+						
+						<br>
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/cheeseIcon.png" alt="icon of a cheese." class="orderIcon">
+                        </div>
+						<div class="title-choices">
+							<p class="choose">Choose your add-on/s:</p>
+						</div><br>
+						
+						<div class="block-choices">
+							<input type="checkbox" id="withCheese">
+							<label for="withCheese" >With Cheese</label><br>
+                        
+							<input type="checkbox" id="coleslaw">
+							<label for="coleslaw">Coleslaw</label><br>
+                        
+							<input type="checkbox" id="tomato">
+							<label for="tomato">Tomato</label><br>
+                        </div>
+						
+						<div class="block-choices">
+							<input type="checkbox" id="onion">
+							<label for="onion">Onion</label><br>
+                        
+							<input type="checkbox" id="cucumber">
+							<label for="cucumber">Cucumber</label><br>
+                        
+							<input type="checkbox" id="bacon">
+							<label for="bacon">Bacon</label>
+						</div><br>
+                    
+                    <div class="title-choices">
+                        <img src="DAGUNTON_IMAGES_ITAD/quantity-b-icon.png" alt="icon of quantity." class="orderIcon">
+					</div>
+					<div class="title-choices">
+						<p class="choose">Quantity: </p>
+					</div><br>
+					
+						<input type="number" id="quantity" max="25" min="0" placeholder="max: 25">
+
+					 <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+						<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+                 </div>
+                </fieldset> 
+			
+		<!--PASTA-->
+        </section>
+        <section class="section-container">
+            <fieldset>
+                <legend id="pasta">PASTA</legend>
+				<hr class="divider"/>
+				<div class="legend-label">
+					<label for="pasta">The sauce is the heart of a pasta,<br>so choose the one that speaks to you. </label>
+				</div>
+				<img src="DAGUNTON_IMAGES_ITAD/pasta.png" alt="pasta image" class="food">
+				
+                <div class="checks">                          
+                        
+						
+						<!--SAUCES-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/pastaIcon.png" alt="icon of pasta." class="orderIcon"> 
+                        </div>
+						<div class="title-choices">
+							<p class="choose">Choose your Sauce:<br>
+						</div>
+						
+						<div class="block-choices">
+							<input type="radio" name="sauce" id="carbonara">
+							<label for="carbonara">Carbonara</label><br>
+							<input type="radio" name="sauce" id="pesto">
+							<label for="pesto">Pesto</label>
+						</div>
+						
+						<div class="block-choices">
+							<input type="radio" name="sauce" id="spaghetti">
+							<label for="spaghetti">Spaghetti</label><br>
+							<input type="radio" name="sauce" id="lasagna">
+							<label for="lasagna">Lasagna</label><br>
+                        </div><br>
+						
+						<!--ADD-ONS-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/addOnsIcon.png" alt="icon of a cheese." class="orderIcon">
+                        </div>
+						<div class="title-choices">
+							<p class="choose">Choose your add-on/s:</p>
+						</div><br>
+						
+						<div class="block-choices"><!--FIRST BLOCK-->
+							<input type="radio" name="sauce" id="extraCheese">
+							<label for="extraCheese">Extra Cheese</label><br>
+						
+							<input type="radio" name="sauce" id="extraSauce">
+							<label for="extraSauce">Extra Sauce</label><br>
+						</div>
+						
+						<div class="block-choices"><!--SECOND BLOCK-->
+							<input type="radio" name="sauce" id="mushrooms">
+							<label for="mushrooms">Extra Mushrooms</label><br>
+							
+							<input type="radio" name="sauce" id="rosemary">
+							<label for="rosemary">Extra Rosemary</label><br>
+						</div>
+						
+						<!--QUANTITY PASTA-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/quantity-p.png" alt="icon of quantity." class="orderIcon"> 
+                        </div>
+						<div class="title-choices">
+							<p class="choose">Quantity: </p>
+                        </div><br>
+							<input type="number" id="quantity" max="15" min="0" placeholder="per box">
+                    
+                    <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+						<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+                </div>
+            </fieldset> 
+            <!--</form>-->
+        </section>
+		
+		<!--FRIES-->
+        <section class="section-container">
+            <fieldset>
+                <legend id="fries">FRIES</legend>
+				<hr class="divider"/>
+				
+				<div class="legend-label">
+					<label for="fries">The choice is yours when it comes to fries.<br> Select the perfect size and flavor to enjoy.</label>
+				</div>
+				
+				<img src="DAGUNTON_IMAGES_ITAD/fries.png" alt="Picture of our special fries." class="food">
+				
+                <div class="checks">        
+					
+					
+					<!--FLAVOR-->
+					<div class="title-choices">
+						<img src="DAGUNTON_IMAGES_ITAD/friesFlavor.png" alt="icon of quantity." class="orderIcon">
+					</div>
+					
+					<div class="title-choices">
+						<p class="choose">Choose your flavor:</p>
+					</div>
+						<div class="block-choices">
+							<input type="radio" name="flavor" id="bbq">
+							<label for="bbq">BBQ</label><br>
+            
+							<input type="radio" name="flavor" id="spicy">
+							<label for="spicy">Spicy BBQ</label><br>
+						</div>
+						<div class="block-choices">
+							<input type="radio" name="flavor" id="sourCream">
+							<label for="sourCream">Sour Cream</label><br>
+                  
+							<input type="radio" name="flavor" id="cheese">
+							<label for="cheese">Cheese</label>
+						</div><br>
+						
+					<!--SIZE-->				
+					<div class="title-choices">
+						<img src="DAGUNTON_IMAGES_ITAD/friesSize.png" alt="icon of quantity." class="orderIcon">
+					</div>
+					<div class="title-choices">
+                        <p class="choose">Choose your size:</p>
+                    </div>
+					
+					<div class="block-choices">
+						<input type="radio" name="size" id="smallFries">
+						<label for="smallFries">Small</label>
+
+						<input type="radio" name="size" id="mediumFries">
+						<label for="mediumFries">Medium</label>
+                        
+						<input type="radio" name="size" id="largeFries">
+						<label for="largeFries">Large</label><br>
+					</div><br>
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/quantity-f.png" alt="icon of quantity." class="orderIcon"> 
+						</div>
+						<div class="title-choices">
+							<p class="choose">Quantity:</p>
+						</div><br>
+                        <input type="number" id="quantity" max="5" min="0">
+
+                    <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+						<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+                </div>
+            </fieldset> 
+        </section>
+		  
+		  <!--DRINKS-->
+          <section class="section-container">
+              <fieldset>
+                <legend id="drinks">DRINKS</legend>
+				<hr class="divider"/>
+				<div class="legend-label">
+					<label for="drinks">We have a range of beverages available<br> for you to choose from. Take your pick!</label>
+				</div>
+				  <img src="DAGUNTON_IMAGES_ITAD/drinks.png" alt="orange juice picture" class="food">
+                <div class="checks"> 
+					
+					<div class="title-choices">
+                        <img src="DAGUNTON_IMAGES_ITAD/drinkIcon.png" alt="drink icon." class="orderIcon">
+					</div>
+					<div class="title-choices">
+                        <p class="choose">Choose your drinks:</p>
+					</div>
+						
+						<div class="block-choices">
+							<input type="checkbox" id="icedCoffee">
+							<label for="icedCoffee">Black Iced Coffee</label><br>
+							
+							<input type="checkbox" id="icedAmericano">
+							<label for="icedAmericano">Iced Americano</label><br>
+							
+							<input type="checkbox" id="mochaFrappe">
+							<label for="mochaFrappe">Mocha Frappe</label><br>
+							
+							<input type="checkbox" id="bottledWater">
+							<label for="bottledWater">Bottled Water</label>
+						</div>
+						
+						<div class="block-choices">
+							<input type="checkbox" id="coke">
+							<label for="coke">Coke</label><br>
+						
+							<input type="checkbox" id="sarsi">
+							<label for="sarsi">Sarsi</label><br>
+			
+							<input type="checkbox" id="sprite">
+							<label for="sprite">Sprite</label><br>
+						
+							<input type="checkbox" id="orangeJuice">
+							<label for="orangeJuice">Orange Juice</label><br>
+						</div><br>
+
+                        <!--SIZE-->
+						<div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/drinkSize.png" alt="icon of quantity." class="orderIcon">
+						</div>
+						<div class="title-choices">
+							<p class="choose">Choose your size:</p>
+						</div>
+						
+						<div class="block-choices">
+							<input type="radio" name="size" id="smallDrink">
+							<label for="smallDrink">Small</label>
+
+							<input type="radio" name="size" id="mediumDrink">
+							<label for="mediumDrink">Medium</label>
+							
+							<input type="radio" name="size" id="largeDrink">
+							<label for="largeDrink">Large</label>
+						</div><br>
+
+                        <div class="title-choices">
+							<img src="DAGUNTON_IMAGES_ITAD/quantity-d.png" alt="icon of quantity." class="orderIcon"> 
+						</div>
+						<div class="title-choices">
+							<p class="choose">Quantity: </p>
+						</div><br>
+                        <input type="number" id="quantity" max="10" min="0" placeholder="max. 10">
+
+                    <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+						<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+
+                </div>
+            </fieldset> 
+        </section>
+        <section class="section-container">
+				<div class="feedback-icon">
+					<img src="DAGUNTON_IMAGES_ITAD/feedback-icon.png" alt="Picture of a girl showing her opinion." class="undraw">
+				</div><br>
+              <fieldset>
+
+                <legend id="feedback">FEEDBACK</legend>
+				<hr class="divider"/>
+				<div class="legend-label">
+					<label for="feedback">Your satisfaction is important to us.<br>If you have any feedback,<br>we would love to hear it!</label><br>
+				</div>
+                <div class="checks">                         
+                        <textarea name="feedback" id="inputFeedback" placeholder="Write something here..." cols="77" rows="10"></textarea>  
+
+                      <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+							<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+
+                   </div>
+                  </fieldset> 
+        </section>
+        <section class="section-container">
+				<div class="feedback-icon">
+					<img src="DAGUNTON_IMAGES_ITAD/deliveryIcon.png" alt="delivery icon" class="undraw">
+				</div><br>
+            <fieldset>
+                <legend id="delivery">DELIVERY</legend>
+				<hr class="divider"/>
+				<div class="legend-label">
+					 <label for="feedback">Choose how should your order be delivered to you: </label>
+				</div>
+                <div class="checks">                          
+ 
+                   
+                    <p>
+
+                        <input type="radio" name="delivery-type" id="pickup">
+                        <label for="pickup">Pick-up</label>
+
+                        <input type="radio" name="delivery-type" id="delivery">
+                        <label for="delivery">Delivery</label>
+
+                      <div class="btn-holder"><!--GO TO TOP BUTTON-->
+						<a href="#top">
+							<button class="button go-top">GO TO TOP</button>
+						</a>
+					</div>
+
+                </div>
+            </fieldset> 
+        </section>
+		<div class="end-buttons">
+			<input type="reset" value="Reset" id="reset">
+            <input type="submit" value="Submit" id="submit">
+        </div>
+		
+		</form>
+	</div>
+</body>
+</html>
